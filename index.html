@@ -60,8 +60,9 @@
             var message = document.getElementById('message').value;
             var password = document.getElementById('password').value;
 
-            fetch('https://script.google.com/macros/s/AKfycbzec4556mcU17bxcvct7sM9LPZN9Q9WNC1IjHP8N_9gY-WFhb2rXPCEhHbcWikrDugT/exec', {
+            fetch('https://script.google.com/macros/s/AKfycbyxuxL7RrvSJV94oHvd-rqJJx80QjDdHEFKOjuyHjFfxkVfhCnKHvlQZOg-8ztLFBAr/exec', {
                 method: 'POST',
+                mode: 'cors',
                 body: JSON.stringify({name: name, email: email, message: message, password: password}),
                 headers: {
                     'Content-Type': 'application/json'
